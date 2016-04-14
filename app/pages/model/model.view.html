@@ -1,0 +1,10 @@
+<ion-navbar secondary *navbar>
+    <ion-title>Select a {{ manufacturer.ModelYear }} {{ manufacturer.Make }}</ion-title>
+</ion-navbar>
+<ion-content>
+    <ion-list>
+        <button ion-item *ngFor="#vehicle of availableVehicles" (click)="getVehicleDetails(vehicle)">
+            <h2>{{ vehicle.Model }}</h2>
+        </button>
+    </ion-list>
+</ion-content>

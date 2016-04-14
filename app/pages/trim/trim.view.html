@@ -1,0 +1,10 @@
+<ion-navbar secondary *navbar>
+    <ion-title>Select a Trim</ion-title>
+</ion-navbar>
+<ion-content>
+    <ion-list>
+        <button ion-item *ngFor="#vehicle of availableVehicles" (click)="getVehicleDetails(vehicle)" text-wrap>
+            <h2>{{ vehicle.VehicleDescription }}</h2>
+        </button>
+    </ion-list>
+</ion-content>

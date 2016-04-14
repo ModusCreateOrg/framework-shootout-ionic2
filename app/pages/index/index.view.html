@@ -1,0 +1,11 @@
+<ion-navbar secondary *navbar>
+    <ion-title>NCAP Safety App</ion-title>
+</ion-navbar>
+<ion-content>
+    <ion-list>
+        <ion-list-header>Select a Model Year</ion-list-header>
+        <button ion-item *ngFor="#year of modelYears" (click)="goToModelYear(year)">
+            <h2>{{ year.ModelYear }}</h2>
+        </button>
+    </ion-list>
+</ion-content>

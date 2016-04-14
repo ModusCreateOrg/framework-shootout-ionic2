@@ -1,0 +1,10 @@
+<ion-navbar secondary *navbar>
+    <ion-title>Select a Manufacturer</ion-title>
+</ion-navbar>
+<ion-content>
+    <ion-list>
+        <button ion-item *ngFor="#manufacturer of availableManufacturers" (click)="goToManufacturer(manufacturer)">
+            <h2>{{ manufacturer.Make }}</h2>
+        </button>
+    </ion-list>
+</ion-content>

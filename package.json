@@ -1,0 +1,63 @@
+{
+  "name": "mobile-framework-shootout-ionic2",
+  "description": "Mobile Locate Application",
+  "dependencies": {
+    "angular2": "2.0.0-beta.13",
+    "es6-promise": "3.0.2",
+    "es6-shim": "^0.35.0",
+    "google-maps": "^3.2.1",
+    "ionic-angular": "2.0.0-beta.4",
+    "ionic-native": "^1.1.0",
+    "ionicons": "3.0.0-alpha.3",
+    "lodash": "^4.8.2",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.2",
+    "zone.js": "0.6.6"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^0.16.2",
+    "css-loader": "^0.23.1",
+    "del": "^2.2.0",
+    "file-loader": "^0.8.5",
+    "gulp": "^3.9.1",
+    "gulp-preprocess": "^2.0.0",
+    "gulp-watch": "^4.3.5",
+    "html-loader": "^0.4.3",
+    "image-loader": "0.0.1",
+    "image-webpack-loader": "^1.6.3",
+    "ionic-gulp-fonts-copy": "^1.0.0",
+    "ionic-gulp-sass-build": "^1.0.0",
+    "ionic-gulp-scripts-copy": "^1.0.0",
+    "ionic-gulp-webpack-build": "^1.0.0",
+    "json-loader": "^0.5.4",
+    "node-sass": "^3.4.2",
+    "sass-loader": "^3.1.2",
+    "strip-sourcemap-loader": "0.0.1",
+    "style-loader": "^0.13.0",
+    "tslint": "^3.5.0",
+    "tslint-loader": "^2.1.0",
+    "typescript": "^1.8.2",
+    "url-loader": "^0.5.7",
+    "webpack": "^2.1.0-beta.4"
+  },
+  "cordovaPlugins": [
+    "cordova-plugin-device",
+    "cordova-plugin-console",
+    "cordova-plugin-whitelist",
+    "cordova-plugin-splashscreen",
+    "cordova-plugin-statusbar",
+    "ionic-plugin-keyboard"
+  ],
+  "cordovaPlatforms": [
+    {
+      "platform": "ios",
+      "version": "4.1.0",
+      "locator": "ios@4.1.0"
+    },
+    {
+      "platform": "android",
+      "version": "5.1.1",
+      "locator": "android@5.1.1"
+    }
+  ]
+}

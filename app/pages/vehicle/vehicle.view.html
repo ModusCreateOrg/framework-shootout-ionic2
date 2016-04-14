@@ -1,0 +1,72 @@
+<ion-navbar secondary *navbar>
+    <ion-title>Vehicle Details</ion-title>
+</ion-navbar>
+<ion-content>
+    <ion-spinner *ngIf="!selectedVehicle"></ion-spinner>
+    <ion-card *ngIf="selectedVehicle">
+        <img *ngIf="selectedVehicle.VehiclePicture" [src]="selectedVehicle.VehiclePicture" />
+        <ion-card-header>
+            {{ selectedVehicle.VehicleDescription }}
+        </ion-card-header>
+        <ion-list>
+            <ion-item>
+                <small>Overall</small>
+                <ion-note item-right>
+                    <stars [numberOfStars]="selectedVehicle.OverallRating"></stars>
+                </ion-note>
+            </ion-item>
+            <ion-item>
+                <small>Front Crash Drivers Side</small>
+                <ion-note item-right>
+                    <stars [numberOfStars]="selectedVehicle.FrontCrashDriversideRating"></stars>
+                </ion-note>
+            </ion-item>
+            <ion-item>
+                <small>Front Crash Passenger Side</small>
+                <ion-note item-right>
+                    <stars [numberOfStars]="selectedVehicle.FrontCrashPassengersideRating"></stars>
+                </ion-note>
+            </ion-item>
+            <ion-item>
+                <small>Side Crash Drivers Side</small>
+                <ion-note item-right>
+                    <stars [numberOfStars]="selectedVehicle.SideCrashDriversideRating"></stars>
+                </ion-note>
+            </ion-item>
+            <ion-item>
+                <small>Side Crash Passenger Side</small>
+                <ion-note item-right>
+                    <stars [numberOfStars]="selectedVehicle.SideCrashPassengersideRating"></stars>
+                </ion-note>
+            </ion-item>
+            <ion-item>
+                <small>Side Crash Pole</small>
+                <ion-note item-right>
+                    <stars [numberOfStars]="selectedVehicle.SidePoleCrashRating"></stars>
+                </ion-note>
+            </ion-item>
+            <ion-item>
+                <small>Rollover</small>
+                <ion-note item-right>
+                    <stars [numberOfStars]="selectedVehicle.RolloverRating"></stars>
+                </ion-note>
+            </ion-item>
+        </ion-list>
+    </ion-card>
+    <ion-card *ngIf="selectedVehicle">
+        <ion-card-header>
+            Crash Test Pictures
+        </ion-card-header>
+        <ion-slides pager>
+            <ion-slide>
+                <img style="min-width: 100%;" [src]="selectedVehicle.FrontCrashPicture" />
+            </ion-slide>
+            <ion-slide>
+                <img style="min-width: 100%;" [src]="selectedVehicle.SideCrashPicture" />
+            </ion-slide>
+            <ion-slide>
+                <img style="min-width: 100%;" [src]="selectedVehicle.SidePolePicture" />
+            </ion-slide>
+        </ion-slides>
+    </ion-card>
+</ion-content>
