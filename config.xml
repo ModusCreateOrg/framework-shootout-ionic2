@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <widget id="com.calamp.mobile.mobilelocate" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>Mobile Locate</name>
-  <description>CalAmp Mobile Locate</description>
-  <author email="support@calamp.com">Dave Ackerman</author>
+  <name>NHTSABrowser</name>
+  <description>NHTSABrowser</description>
+  <author email="dave@moduscreate.com">Dave Ackerman</author>
   <content src="index.html"/>
   <access origin="*"/>
   <allow-intent href="http://*/*"/>
