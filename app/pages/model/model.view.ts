@@ -1,10 +1,12 @@
 import { Page, Modal, NavController, NavParams, Loading } from 'ionic-angular';
 import { NHTSAService } from '../../services/nhtsa.service';
 import { TrimView } from '../trim/trim.view';
+import { TitleCasePipe } from '../../pipes/titleCase.ts';
 import * as template from './model.view.html';
 
 @Page({
-    template
+    template,
+    pipes: [ TitleCasePipe ]
 })
 export class ModelView {
     private manufacturer;

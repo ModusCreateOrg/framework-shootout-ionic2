@@ -1,1 +1,20 @@
-// http://ionicframework.com/docs/v2/theming/
+.content-spinner {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+
+    ion-spinner {
+        flex: 1;
+    }
+}
+
+.main-navbar[secondary] {
+    .toolbar-background {
+        border: 0;
+        background: linear-gradient(to right, #A52F73, #7B4397);
+    }
+    .toolbar-title {
+        color: #fff;
+        font-weight: 400;
+    }
+}

@@ -1,4 +1,4 @@
-<ion-navbar secondary *navbar>
+<ion-navbar class="main-navbar" secondary *navbar>
     <ion-title>Vehicle Details</ion-title>
 </ion-navbar>
 <ion-content>
@@ -58,13 +58,13 @@
             Crash Test Pictures
         </ion-card-header>
         <ion-slides pager>
-            <ion-slide>
+            <ion-slide *ngIf="selectedVehicle.FrontCrashPicture">
                 <img style="min-width: 100%;" [src]="selectedVehicle.FrontCrashPicture" />
             </ion-slide>
-            <ion-slide>
+            <ion-slide *ngIf="selectedVehicle.SideCrashPicture">
                 <img style="min-width: 100%;" [src]="selectedVehicle.SideCrashPicture" />
             </ion-slide>
-            <ion-slide>
+            <ion-slide *ngIf="selectedVehicle.SidePolePicture">
                 <img style="min-width: 100%;" [src]="selectedVehicle.SidePolePicture" />
             </ion-slide>
         </ion-slides>

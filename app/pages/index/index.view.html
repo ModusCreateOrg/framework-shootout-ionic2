@@ -1,7 +1,10 @@
-<ion-navbar secondary *navbar>
+<ion-navbar class="main-navbar" secondary *navbar>
     <ion-title>NCAP Safety App</ion-title>
 </ion-navbar>
 <ion-content>
+    <div class="content-spinner" *ngIf="!modelYears.length">
+        <ion-spinner></ion-spinner>
+    </div>
     <ion-list>
         <ion-list-header>Select a Model Year</ion-list-header>
         <button ion-item *ngFor="#year of modelYears" (click)="goToModelYear(year)">
