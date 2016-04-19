@@ -2,13 +2,11 @@ import { Page, Modal, NavController, NavParams, Loading } from 'ionic-angular';
 import { NHTSAService } from '../../services/nhtsa.service';
 import { ModelView } from '../model/model.view';
 import { TitleCasePipe } from '../../pipes/titleCase.ts';
-import { SearchBar } from '../../components/searchbar/searchbar';
 import * as template from './make.view.html';
 
 @Page({
     template,
-    pipes: [ TitleCasePipe ],
-    directives: [ SearchBar ]
+    pipes: [ TitleCasePipe ]
 })
 export class MakeView {
     private availableManufacturers = [];
